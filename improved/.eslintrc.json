@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": 0,
+    "max-len": ["error", { "code": 80, "tabWidth": 4 }],
+    "dot-notation": "error",
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "camelcase": ["warn", { "properties": "always" }],
+    "no-alert": "warn",
+    "comma-dangle": ["error", "always-multiline"]
+  }
+}
